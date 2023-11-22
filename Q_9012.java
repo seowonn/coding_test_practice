@@ -3,45 +3,37 @@ package coding_test_practice;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.Stack;
 
 public class Q_9012 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int cnt = Integer.parseInt(br.readLine());
-        ArrayList<String> strs = new ArrayList<>();
-        for (int i = 0; i < cnt; i++) {
-            strs.add(br.readLine());
+
+        int T = Integer.parseInt(br.readLine());
+        String[] strings = new String[T];
+        for (int i = 0; i < T; i++) {
+            strings[i] = br.readLine();
         }
 
-        String leftWord = "(";
-        String rightWord = ")";
-
-        for (int i = 0; i < strs.size(); i++) {
-            String str = strs.get(i);
-            int remain = 0;
-            Queue<String> queue = new LinkedList<>();
-            for(String s : str.split("")){
-                if(queue.isEmpty()){
-                    if(s.equals(leftWord)) {
-                        queue.add(s);
+        for (int i = 0; i < T; i++) {
+            boolean flag = true;
+            String string = strings[i];
+            Stack<Character> stack = new Stack<>();
+            for(char c : string.toCharArray()){
+                if(c == '('){
+                    stack.push(c);
+                } else {
+                    if(stack.isEmpty()){
+                        flag = false;
                     } else {
-                        remain++;
-                    }
-                } else{
-                    if(s.equals(rightWord)){
-                        queue.poll();
-                    } else {
-                        queue.add(s);
+                        stack.pop();
                     }
                 }
             }
-            if(queue.isEmpty() && remain == 0) {
+            if(stack.isEmpty() && flag)
                 System.out.println("YES");
-            }else {
+            else
                 System.out.println("NO");
-            }
         }
-
     }
 }
