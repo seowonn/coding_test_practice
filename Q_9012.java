@@ -25,6 +25,7 @@ public class Q_9012 {
                 } else {
                     if(stack.isEmpty()){
                         flag = false;
+                        break;
                     } else {
                         stack.pop();
                     }
