@@ -1,4 +1,4 @@
-package coding_test_practice;
+package coding_test_practice.dynamic_programming;
 
 import java.io.*;
 import java.util.StringTokenizer;

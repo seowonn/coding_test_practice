@@ -1,4 +1,4 @@
-package coding_test_practice;
+package coding_test_practice.queue_stack;
 
 import java.io.BufferedReader;
 import java.io.IOException;

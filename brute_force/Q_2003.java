@@ -1,4 +1,4 @@
-package coding_test_practice;
+package coding_test_practice.brute_force;
 
 import java.io.BufferedReader;
 import java.io.IOException;
