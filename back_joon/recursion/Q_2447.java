@@ -1,4 +1,4 @@
-package coding_test_practice.divide_and_conquer;
+package coding_test_practice.back_joon.recursion;
 
 import java.io.BufferedReader;
 import java.io.IOException;

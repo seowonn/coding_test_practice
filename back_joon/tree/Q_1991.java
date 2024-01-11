@@ -1,4 +1,4 @@
-package coding_test_practice.tree;
+package coding_test_practice.back_joon.tree;
 
 import java.io.BufferedReader;
 import java.io.IOException;

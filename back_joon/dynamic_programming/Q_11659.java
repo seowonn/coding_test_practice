@@ -1,4 +1,4 @@
-package coding_test_practice.dynamic_programming;
+package coding_test_practice.back_joon.dynamic_programming;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -14,7 +14,9 @@ public class Q_11659 {
         int m = Integer.parseInt(st.nextToken());
 
         int[] totalDp = new int[n + 1];
-        st = new StringTokenizer(br.readLine());
+
+
+             st = new StringTokenizer(br.readLine());
         for (int i = 1; i <= n; i++)
             totalDp[i] = totalDp[i - 1] + Integer.parseInt(st.nextToken());
 

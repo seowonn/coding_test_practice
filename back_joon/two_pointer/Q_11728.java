@@ -1,4 +1,4 @@
-package coding_test_practice.two_pointer;
+package coding_test_practice.back_joon.two_pointer;
 
 import java.io.*;
 import java.util.*;

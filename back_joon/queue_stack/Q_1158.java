@@ -1,4 +1,4 @@
-package coding_test_practice.queue_stack;
+package coding_test_practice.back_joon.queue_stack;
 
 import java.util.ArrayList;
 import java.util.Scanner;
